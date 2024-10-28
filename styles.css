@@ -13,11 +13,13 @@
 /* left side*/
 
 .container-left {
-    width: 33%;
+    width: 50%;
     height: 100vh;
     border: 1px solid red;
     display: flex;
     flex-direction: column;
+    background: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
 }
 
 .header {
@@ -40,41 +42,70 @@
     width: 100%;
     border: 1px solid blue;
     flex-direction: column;
-}
-
-.description-one {
-
-}
-
-.description-two {
-
-}
-
-.form {
     
 }
 
-
-
-.container-form {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50vw;
-    gap: 50px;
-    padding: 50px;
+.description {
+    line-height: 1.2rem;
+    padding-top: 0;
+    font-weight: bold;
+    margin: 10rem 0 2rem 3rem;
 }
 
+/* FORM */
 
-.container-input {
-    border: 1px solid black;
+.container-form {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    padding: 2rem 0rem 2rem 3rem;
+    gap: 10px 100px;
 }
 
 .form-header {
+    font-size: 22px;
+    font-weight: 800;
     grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.container-input {
+
+}
+
+
+.container-input > label {
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
 }
 
 .container-input > input {
     display: block;
+    width: 20rem;
+    border-radius: 5px;
+    border: 2px solid #E5E7EB;
+    padding: 5px;
 }
 
+.container-input > input:invalid {
+    border: 1px solid red;
+}
+
+.button-form {
+    background-color: #596D48;
+    margin-left: 3rem;
+    color :white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;   
+}
+
+.login-text {
+    margin-left: 3rem;
+}
+
+.login-link {
+
+}
